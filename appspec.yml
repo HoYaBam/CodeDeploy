@@ -1,0 +1,21 @@
+# 코드 디플로이에서 사용되는 작업이다.
+version: 0.0
+os: linux #os 설정
+files:
+  - source:  /
+    destination: /webstore/pub/codeDeploy/work/build
+    # 어디 폴더에서 실행하는지 자신에게 맞게 셋팅해준다.
+
+permissions:
+  - object: /
+    pattern: "**"
+    owner: master
+    group: master
+# 권한 설정이다.
+hooks:
+  ApplicationStart:
+    - location: deploy.sh
+      timeout: 60
+      runas: master
+# 실질적으로 동작하는 작업이다. 
+# /webstore/pub/codeDeploy/work/build/deploy.sh 를 동작해라 라는 의미이다.
