@@ -1,4 +1,5 @@
 # CodeDeploy
+ - [참고 사이트](https://blog.bespinglobal.com/post/github-action-%EC%9C%BC%EB%A1%9C-ec2-%EC%97%90-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0/)
 
 # AWS 해야할 작업
 ### 1. S3 버킷을 생성해야 한다.
